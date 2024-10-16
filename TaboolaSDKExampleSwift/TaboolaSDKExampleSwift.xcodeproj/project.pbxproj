@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26C569F4269B2A8800423171 /* NativeViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */; };
+		26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */; };
+		722CA6F4241792840022043F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F3241792840022043F /* AppDelegate.swift */; };
+		722CA6F8241792840022043F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F7241792840022043F /* MainViewController.swift */; };
+		722CA6FB241792840022043F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6F9241792840022043F /* Main.storyboard */; };
+		722CA6FD241792850022043F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6FC241792850022043F /* Assets.xcassets */; };
+		722CA700241792850022043F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6FE241792850022043F /* LaunchScreen.storyboard */; };
+		725461B32427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725461B22427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift */; };
+		725461B62427A4D500660672 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725461B52427A4D500660672 /* WebViewController.swift */; };
+		725461B82427B58200660672 /* SampleHTMLPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 725461B72427B58200660672 /* SampleHTMLPage.html */; };
+		725461BB2427BB4200660672 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725461BA2427BB4200660672 /* NativeViewController.swift */; };
+		7256529124A4DA08007C07EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7256529024A4DA08007C07EB /* Constants.swift */; };
+		7271C6FE24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271C6FD24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift */; };
+		7271C700246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271C6FF246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift */; };
+		72BB672A24BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */; };
+		72D70006244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D70005244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift */; };
+		72D7000A24503D0D004C967C /* ClassicFrameScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */; };
+		91BA97C731448D934E9E2A2A /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */; };
+		BAB379CE28C610C1007E7007 /* SampleContinuousScrollPage.html in Resources */ = {isa = PBXBuildFile; fileRef = BAB379CD28C610C1007E7007 /* SampleContinuousScrollPage.html */; };
+		BAB379D228C61237007E7007 /* ContinuousScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB379D128C61237007E7007 /* ContinuousScrollController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewControllerCell.xib; sourceTree = "<group>"; };
+		26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewControllerCell.swift; sourceTree = "<group>"; };
+		37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaboolaSDKExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		722CA6F3241792840022043F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		722CA6F7241792840022043F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		722CA6FA241792840022043F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		722CA6FC241792850022043F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		722CA6FF241792850022043F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		722CA701241792850022043F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725461B22427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicCollectionViewManagedByTaboolaController.swift; sourceTree = "<group>"; };
+		725461B52427A4D500660672 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		725461B72427B58200660672 /* SampleHTMLPage.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SampleHTMLPage.html; sourceTree = "<group>"; };
+		725461BA2427BB4200660672 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		7256529024A4DA08007C07EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7271C6FD24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicCollectionViewManagedByPublisherController.swift; sourceTree = "<group>"; };
+		7271C6FF246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTableViewManagedByPublisher.swift; sourceTree = "<group>"; };
+		72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicConstraintsScrollViewController.swift; sourceTree = "<group>"; };
+		72D70005244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTableViewManagedByTaboolaController.swift; sourceTree = "<group>"; };
+		72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFrameScrollViewController.swift; sourceTree = "<group>"; };
+		BAB379CD28C610C1007E7007 /* SampleContinuousScrollPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SampleContinuousScrollPage.html; sourceTree = "<group>"; };
+		BAB379D128C61237007E7007 /* ContinuousScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousScrollController.swift; sourceTree = "<group>"; };
+		C0AF67F2E6E0550FEC48A220 /* Pods-TaboolaSDKExampleV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleV3.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleV3/Pods-TaboolaSDKExampleV3.debug.xcconfig"; sourceTree = "<group>"; };
+		CD964DAFFF94D17B2ACDB84C /* Pods-TaboolaSDKExampleV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleV3.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleV3/Pods-TaboolaSDKExampleV3.release.xcconfig"; sourceTree = "<group>"; };
+		D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		722CA6ED241792840022043F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BA97C731448D934E9E2A2A /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60902F694599DB3A7EB84DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		722CA6E7241792840022043F = {
+			isa = PBXGroup;
+			children = (
+				722CA6F2241792840022043F /* TaboolaSDKExampleSwift */,
+				722CA6F1241792840022043F /* Products */,
+				F2A923B628886A3A56F7FF2B /* Pods */,
+				60902F694599DB3A7EB84DB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		722CA6F1241792840022043F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		722CA6F2241792840022043F /* TaboolaSDKExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				722CA6F3241792840022043F /* AppDelegate.swift */,
+				722CA6F7241792840022043F /* MainViewController.swift */,
+				7256529024A4DA08007C07EB /* Constants.swift */,
+				725461B12427A13400660672 /* SDK Classic */,
+				725461B42427A4BE00660672 /* SDK Web */,
+				725461B92427B81600660672 /* SDK Native */,
+				722CA6F9241792840022043F /* Main.storyboard */,
+				722CA6FC241792850022043F /* Assets.xcassets */,
+				722CA6FE241792850022043F /* LaunchScreen.storyboard */,
+				722CA701241792850022043F /* Info.plist */,
+			);
+			path = TaboolaSDKExampleSwift;
+			sourceTree = "<group>";
+		};
+		725461B12427A13400660672 /* SDK Classic */ = {
+			isa = PBXGroup;
+			children = (
+				7271C6FA24695D250003204A /* CollectionView */,
+				7271C6FB246966100003204A /* TableView */,
+				7271C6FC246966220003204A /* ScrollView */,
+			);
+			path = "SDK Classic";
+			sourceTree = "<group>";
+		};
+		725461B42427A4BE00660672 /* SDK Web */ = {
+			isa = PBXGroup;
+			children = (
+				725461B52427A4D500660672 /* WebViewController.swift */,
+				BAB379D128C61237007E7007 /* ContinuousScrollController.swift */,
+				725461B72427B58200660672 /* SampleHTMLPage.html */,
+				BAB379CD28C610C1007E7007 /* SampleContinuousScrollPage.html */,
+			);
+			path = "SDK Web";
+			sourceTree = "<group>";
+		};
+		725461B92427B81600660672 /* SDK Native */ = {
+			isa = PBXGroup;
+			children = (
+				725461BA2427BB4200660672 /* NativeViewController.swift */,
+				26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */,
+				26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */,
+			);
+			path = "SDK Native";
+			sourceTree = "<group>";
+		};
+		7271C6FA24695D250003204A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				725461B22427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift */,
+				7271C6FD24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		7271C6FB246966100003204A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				72D70005244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift */,
+				7271C6FF246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		7271C6FC246966220003204A /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */,
+				72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		F2A923B628886A3A56F7FF2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0AF67F2E6E0550FEC48A220 /* Pods-TaboolaSDKExampleV3.debug.xcconfig */,
+				CD964DAFFF94D17B2ACDB84C /* Pods-TaboolaSDKExampleV3.release.xcconfig */,
+				D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */,
+				0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		722CA6EF241792840022043F /* TaboolaSDKExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 722CA704241792850022043F /* Build configuration list for PBXNativeTarget "TaboolaSDKExampleSwift" */;
+			buildPhases = (
+				511CED58C855A6A57F4760EA /* [CP] Check Pods Manifest.lock */,
+				722CA6EC241792840022043F /* Sources */,
+				722CA6ED241792840022043F /* Frameworks */,
+				722CA6EE241792840022043F /* Resources */,
+				53CC3608EC2EFED37F6863B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaboolaSDKExampleSwift;
+			productName = TaboolaSDKExampleV3;
+			productReference = 722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		722CA6E8241792840022043F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Liad Elidan";
+				TargetAttributes = {
+					722CA6EF241792840022043F = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 722CA6EB241792840022043F /* Build configuration list for PBXProject "TaboolaSDKExampleSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 722CA6E7241792840022043F;
+			productRefGroup = 722CA6F1241792840022043F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				722CA6EF241792840022043F /* TaboolaSDKExampleSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		722CA6EE241792840022043F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722CA700241792850022043F /* LaunchScreen.storyboard in Resources */,
+				BAB379CE28C610C1007E7007 /* SampleContinuousScrollPage.html in Resources */,
+				722CA6FD241792850022043F /* Assets.xcassets in Resources */,
+				26C569F4269B2A8800423171 /* NativeViewControllerCell.xib in Resources */,
+				725461B82427B58200660672 /* SampleHTMLPage.html in Resources */,
+				722CA6FB241792840022043F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511CED58C855A6A57F4760EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaboolaSDKExampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53CC3608EC2EFED37F6863B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		722CA6EC241792840022043F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722CA6F8241792840022043F /* MainViewController.swift in Sources */,
+				72D7000A24503D0D004C967C /* ClassicFrameScrollViewController.swift in Sources */,
+				72BB672A24BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift in Sources */,
+				BAB379D228C61237007E7007 /* ContinuousScrollController.swift in Sources */,
+				26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */,
+				72D70006244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift in Sources */,
+				725461B62427A4D500660672 /* WebViewController.swift in Sources */,
+				7271C700246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift in Sources */,
+				7256529124A4DA08007C07EB /* Constants.swift in Sources */,
+				725461BB2427BB4200660672 /* NativeViewController.swift in Sources */,
+				7271C6FE24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift in Sources */,
+				722CA6F4241792840022043F /* AppDelegate.swift in Sources */,
+				725461B32427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		722CA6F9241792840022043F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				722CA6FA241792840022043F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		722CA6FE241792850022043F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				722CA6FF241792850022043F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		722CA702241792850022043F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		722CA703241792850022043F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		722CA705241792850022043F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = "$(SRCROOT)/TaboolaSDKExampleSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taboola.TaboolaSDKExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		722CA706241792850022043F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = "$(SRCROOT)/TaboolaSDKExampleSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taboola.TaboolaSDKExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		722CA6EB241792840022043F /* Build configuration list for PBXProject "TaboolaSDKExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722CA702241792850022043F /* Debug */,
+				722CA703241792850022043F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722CA704241792850022043F /* Build configuration list for PBXNativeTarget "TaboolaSDKExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722CA705241792850022043F /* Debug */,
+				722CA706241792850022043F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 722CA6E8241792840022043F /* Project object */;
+}

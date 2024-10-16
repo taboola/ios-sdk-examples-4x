@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NativeViewControllerCell" id="svE-sm-ZUw" userLabel="Native View Controller Cell" customClass="NativeViewControllerCell" customModule="TaboolaSDKExampleSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bR-Wh-5aV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="J48-31-8W3"/>
+                        </constraints>
+                        <state key="normal" title="Attribution click"/>
+                    </button>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Px4-Mb-emb" customClass="TBLImageView">
+                        <rect key="frame" x="0.0" y="30" width="375" height="235.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-FG-f3Y">
+                        <rect key="frame" x="5" y="265.5" width="365" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqS-ce-cMq" customClass="TBLTitleLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="365" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-TI-Wki" customClass="TBLBrandingLabel">
+                                <rect key="frame" x="0.0" y="21.5" width="365" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv9-2J-eoH" customClass="TBLDescriptionLabel">
+                                <rect key="frame" x="0.0" y="36" width="365" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0bR-Wh-5aV" secondAttribute="trailing" id="DG3-rk-PZm"/>
+                <constraint firstAttribute="bottom" secondItem="Hok-FG-f3Y" secondAttribute="bottom" constant="5" id="Dgo-To-rpI"/>
+                <constraint firstAttribute="trailing" secondItem="Hok-FG-f3Y" secondAttribute="trailing" constant="5" id="LFZ-lm-sZ0"/>
+                <constraint firstItem="Px4-Mb-emb" firstAttribute="leading" secondItem="svE-sm-ZUw" secondAttribute="leading" id="UDw-Zc-ijT"/>
+                <constraint firstItem="Px4-Mb-emb" firstAttribute="bottom" secondItem="Hok-FG-f3Y" secondAttribute="top" id="XG2-sg-zWx"/>
+                <constraint firstItem="0bR-Wh-5aV" firstAttribute="top" secondItem="svE-sm-ZUw" secondAttribute="top" id="a4g-qx-vPk"/>
+                <constraint firstItem="Px4-Mb-emb" firstAttribute="top" secondItem="0bR-Wh-5aV" secondAttribute="bottom" id="ej7-xT-jv1"/>
+                <constraint firstAttribute="trailing" secondItem="Px4-Mb-emb" secondAttribute="trailing" id="mfY-a8-huv"/>
+                <constraint firstItem="Hok-FG-f3Y" firstAttribute="leading" secondItem="svE-sm-ZUw" secondAttribute="leading" constant="5" id="u7B-xt-kD8"/>
+                <constraint firstItem="0bR-Wh-5aV" firstAttribute="leading" secondItem="svE-sm-ZUw" secondAttribute="leading" id="v9u-NT-E16"/>
+            </constraints>
+            <size key="customSize" width="286" height="187"/>
+            <connections>
+                <outlet property="attributionButton" destination="0bR-Wh-5aV" id="dBG-2A-tL3"/>
+                <outlet property="brandingLabel" destination="ySo-TI-Wki" id="zoT-lR-hAS"/>
+                <outlet property="descriptionLabel" destination="kv9-2J-eoH" id="cLr-in-OIw"/>
+                <outlet property="imageView" destination="Px4-Mb-emb" id="2fV-PA-f3q"/>
+                <outlet property="tbImageView" destination="Px4-Mb-emb" id="H0y-r9-Vrb"/>
+                <outlet property="titleLabel" destination="lqS-ce-cMq" id="AAv-JA-AfX"/>
+            </connections>
+            <point key="canvasLocation" x="-13.768115942028986" y="3.3482142857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

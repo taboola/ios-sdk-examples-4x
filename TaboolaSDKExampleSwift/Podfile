@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'TaboolaSDKExampleSwift' do
+  use_frameworks!
+  
+  pod 'TaboolaSDK', '~>4.0'
+
+  end
+
