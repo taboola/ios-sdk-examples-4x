@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A8C726DF9098A47C624F30A /* Pods_TaboolaSDKExampleObjective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */; };
+		724ACC5624854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */; };
+		724ACC5924865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC5824865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m */; };
+		724ACC6324866C0A00337BD2 /* ClassicFrameScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC6224866C0A00337BD2 /* ClassicFrameScrollViewController.m */; };
+		7271C70F246D49670003204A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C70E246D49670003204A /* AppDelegate.m */; };
+		7271C715246D49670003204A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C714246D49670003204A /* MainViewController.m */; };
+		7271C718246D49670003204A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7271C716246D49670003204A /* Main.storyboard */; };
+		7271C71A246D49690003204A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7271C719246D49690003204A /* Assets.xcassets */; };
+		7271C71D246D49690003204A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7271C71B246D49690003204A /* LaunchScreen.storyboard */; };
+		7271C720246D49690003204A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C71F246D49690003204A /* main.m */; };
+		7271C72A247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C729247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m */; };
+		7271C72F24715E2B0003204A /* RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C72E24715E2B0003204A /* RandomColor.m */; };
+		7271C73124716D230003204A /* ClassicCollectionViewManagedByPublisherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271C73024716D230003204A /* ClassicCollectionViewManagedByPublisherController.m */; };
+		72A2D7BD247AC3970069625D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2D7BC247AC3970069625D /* WebViewController.m */; };
+		72A2D7C4247AC45F0069625D /* SampleHTMLPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 72A2D7C3247AC45F0069625D /* SampleHTMLPage.html */; };
+		72A2D7C624852A390069625D /* NativeBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2D7C524852A390069625D /* NativeBannerViewController.m */; };
+		72BB672724B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BB672624B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m */; };
+		BAB379C628C6048C007E7007 /* WebViewContinuousScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB379C528C6048C007E7007 /* WebViewContinuousScrollViewController.m */; };
+		BAB379C828C604D4007E7007 /* sampleContinuousScrollPage.html in Resources */ = {isa = PBXBuildFile; fileRef = BAB379C728C604D4007E7007 /* sampleContinuousScrollPage.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleObjective_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		257C7CF900FD2384674CDFB2 /* Pods-TaboolaSDKExampleObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; sourceTree = "<group>"; };
+		69F4DE548AB8BAF478F88257 /* Pods-TaboolaSDKExampleObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
+		720B1FBE24B4626000DF79D9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicTableViewManagedByTaboolaController.m; sourceTree = "<group>"; };
+		724ACC5724854CCC00337BD2 /* ClassicTableViewManagedByTaboolaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicTableViewManagedByTaboolaController.h; sourceTree = "<group>"; };
+		724ACC5824865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicTableViewManagedByPublisherController.m; sourceTree = "<group>"; };
+		724ACC5A24865E8100337BD2 /* ClassicTableViewManagedByPublisherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicTableViewManagedByPublisherController.h; sourceTree = "<group>"; };
+		724ACC6224866C0A00337BD2 /* ClassicFrameScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFrameScrollViewController.m; sourceTree = "<group>"; };
+		724ACC6424866C1200337BD2 /* ClassicFrameScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFrameScrollViewController.h; sourceTree = "<group>"; };
+		7271C70A246D49670003204A /* TaboolaSDKExampleObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaboolaSDKExampleObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7271C70D246D49670003204A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7271C70E246D49670003204A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7271C713246D49670003204A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7271C714246D49670003204A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7271C717246D49670003204A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7271C719246D49690003204A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7271C71C246D49690003204A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7271C71E246D49690003204A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7271C71F246D49690003204A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7271C729247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicCollectionViewManagedByTaboolaController.m; sourceTree = "<group>"; };
+		7271C72C247157BE0003204A /* ClassicCollectionViewManagedByTaboolaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicCollectionViewManagedByTaboolaController.h; sourceTree = "<group>"; };
+		7271C72D24715E1E0003204A /* RandomColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomColor.h; sourceTree = "<group>"; };
+		7271C72E24715E2B0003204A /* RandomColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomColor.m; sourceTree = "<group>"; };
+		7271C73024716D230003204A /* ClassicCollectionViewManagedByPublisherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicCollectionViewManagedByPublisherController.m; sourceTree = "<group>"; };
+		7271C73224716D390003204A /* ClassicCollectionViewManagedByPublisherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicCollectionViewManagedByPublisherController.h; sourceTree = "<group>"; };
+		72A2D7BC247AC3970069625D /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		72A2D7BE247AC3A00069625D /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		72A2D7C3247AC45F0069625D /* SampleHTMLPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SampleHTMLPage.html; sourceTree = "<group>"; };
+		72A2D7C524852A390069625D /* NativeBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeBannerViewController.m; sourceTree = "<group>"; };
+		72A2D7C724852A440069625D /* NativeBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeBannerViewController.h; sourceTree = "<group>"; };
+		72BB672624B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicConstraintsScrollViewController.m; sourceTree = "<group>"; };
+		72BB672824B7207900D5A9D4 /* ClassicConstraintsScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicConstraintsScrollViewController.h; sourceTree = "<group>"; };
+		BAB379C428C6048C007E7007 /* WebViewContinuousScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewContinuousScrollViewController.h; sourceTree = "<group>"; };
+		BAB379C528C6048C007E7007 /* WebViewContinuousScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewContinuousScrollViewController.m; sourceTree = "<group>"; };
+		BAB379C728C604D4007E7007 /* sampleContinuousScrollPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sampleContinuousScrollPage.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7271C707246D49670003204A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8C726DF9098A47C624F30A /* Pods_TaboolaSDKExampleObjective_C.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		725365BE247AA86300E33E22 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				724ACC5724854CCC00337BD2 /* ClassicTableViewManagedByTaboolaController.h */,
+				724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */,
+				724ACC5A24865E8100337BD2 /* ClassicTableViewManagedByPublisherController.h */,
+				724ACC5824865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		725365BF247AA86D00E33E22 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				724ACC6424866C1200337BD2 /* ClassicFrameScrollViewController.h */,
+				724ACC6224866C0A00337BD2 /* ClassicFrameScrollViewController.m */,
+				72BB672824B7207900D5A9D4 /* ClassicConstraintsScrollViewController.h */,
+				72BB672624B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		7271C701246D49670003204A = {
+			isa = PBXGroup;
+			children = (
+				7271C70C246D49670003204A /* TaboolaSDKExampleObjective-C */,
+				7271C70B246D49670003204A /* Products */,
+				ABC2304B9A59C85271491E83 /* Pods */,
+				A703C9C158D63F62AE3F3706 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7271C70B246D49670003204A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7271C70A246D49670003204A /* TaboolaSDKExampleObjective-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7271C70C246D49670003204A /* TaboolaSDKExampleObjective-C */ = {
+			isa = PBXGroup;
+			children = (
+				7271C70D246D49670003204A /* AppDelegate.h */,
+				7271C70E246D49670003204A /* AppDelegate.m */,
+				7271C713246D49670003204A /* MainViewController.h */,
+				7271C714246D49670003204A /* MainViewController.m */,
+				720B1FBE24B4626000DF79D9 /* Constants.h */,
+				7271C7262471554F0003204A /* SDK Classic */,
+				7271C727247155770003204A /* SDK Web */,
+				7271C7282471558B0003204A /* SDK Native */,
+				7271C716246D49670003204A /* Main.storyboard */,
+				7271C719246D49690003204A /* Assets.xcassets */,
+				7271C71B246D49690003204A /* LaunchScreen.storyboard */,
+				7271C71E246D49690003204A /* Info.plist */,
+				7271C71F246D49690003204A /* main.m */,
+				7271C72D24715E1E0003204A /* RandomColor.h */,
+				7271C72E24715E2B0003204A /* RandomColor.m */,
+			);
+			path = "TaboolaSDKExampleObjective-C";
+			sourceTree = "<group>";
+		};
+		7271C7262471554F0003204A /* SDK Classic */ = {
+			isa = PBXGroup;
+			children = (
+				7271C72B247157AD0003204A /* CollectionView */,
+				725365BE247AA86300E33E22 /* TableView */,
+				725365BF247AA86D00E33E22 /* ScrollView */,
+			);
+			path = "SDK Classic";
+			sourceTree = "<group>";
+		};
+		7271C727247155770003204A /* SDK Web */ = {
+			isa = PBXGroup;
+			children = (
+				72A2D7BE247AC3A00069625D /* WebViewController.h */,
+				72A2D7BC247AC3970069625D /* WebViewController.m */,
+				BAB379C428C6048C007E7007 /* WebViewContinuousScrollViewController.h */,
+				BAB379C528C6048C007E7007 /* WebViewContinuousScrollViewController.m */,
+				BAB379C728C604D4007E7007 /* sampleContinuousScrollPage.html */,
+				72A2D7C3247AC45F0069625D /* SampleHTMLPage.html */,
+			);
+			path = "SDK Web";
+			sourceTree = "<group>";
+		};
+		7271C7282471558B0003204A /* SDK Native */ = {
+			isa = PBXGroup;
+			children = (
+				72A2D7C724852A440069625D /* NativeBannerViewController.h */,
+				72A2D7C524852A390069625D /* NativeBannerViewController.m */,
+			);
+			path = "SDK Native";
+			sourceTree = "<group>";
+		};
+		7271C72B247157AD0003204A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7271C72C247157BE0003204A /* ClassicCollectionViewManagedByTaboolaController.h */,
+				7271C729247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m */,
+				7271C73224716D390003204A /* ClassicCollectionViewManagedByPublisherController.h */,
+				7271C73024716D230003204A /* ClassicCollectionViewManagedByPublisherController.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		A703C9C158D63F62AE3F3706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABC2304B9A59C85271491E83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69F4DE548AB8BAF478F88257 /* Pods-TaboolaSDKExampleObjective-C.debug.xcconfig */,
+				257C7CF900FD2384674CDFB2 /* Pods-TaboolaSDKExampleObjective-C.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7271C709246D49670003204A /* TaboolaSDKExampleObjective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7271C723246D49690003204A /* Build configuration list for PBXNativeTarget "TaboolaSDKExampleObjective-C" */;
+			buildPhases = (
+				74EBF594F1AD6D5F792984F3 /* [CP] Check Pods Manifest.lock */,
+				7271C706246D49670003204A /* Sources */,
+				7271C707246D49670003204A /* Frameworks */,
+				7271C708246D49670003204A /* Resources */,
+				5AA9939B4C2603F4236F330B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TaboolaSDKExampleObjective-C";
+			productName = "TaboolaSDKExampleObjective-C";
+			productReference = 7271C70A246D49670003204A /* TaboolaSDKExampleObjective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7271C702246D49670003204A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Liad Elidan";
+				TargetAttributes = {
+					7271C709246D49670003204A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7271C705246D49670003204A /* Build configuration list for PBXProject "TaboolaSDKExampleObjective-C" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7271C701246D49670003204A;
+			productRefGroup = 7271C70B246D49670003204A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7271C709246D49670003204A /* TaboolaSDKExampleObjective-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7271C708246D49670003204A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7271C71D246D49690003204A /* LaunchScreen.storyboard in Resources */,
+				7271C71A246D49690003204A /* Assets.xcassets in Resources */,
+				7271C718246D49670003204A /* Main.storyboard in Resources */,
+				BAB379C828C604D4007E7007 /* sampleContinuousScrollPage.html in Resources */,
+				72A2D7C4247AC45F0069625D /* SampleHTMLPage.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AA9939B4C2603F4236F330B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EBF594F1AD6D5F792984F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaboolaSDKExampleObjective-C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7271C706246D49670003204A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7271C715246D49670003204A /* MainViewController.m in Sources */,
+				BAB379C628C6048C007E7007 /* WebViewContinuousScrollViewController.m in Sources */,
+				72A2D7C624852A390069625D /* NativeBannerViewController.m in Sources */,
+				7271C70F246D49670003204A /* AppDelegate.m in Sources */,
+				724ACC5924865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m in Sources */,
+				724ACC6324866C0A00337BD2 /* ClassicFrameScrollViewController.m in Sources */,
+				7271C720246D49690003204A /* main.m in Sources */,
+				72A2D7BD247AC3970069625D /* WebViewController.m in Sources */,
+				72BB672724B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m in Sources */,
+				7271C73124716D230003204A /* ClassicCollectionViewManagedByPublisherController.m in Sources */,
+				7271C72A247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m in Sources */,
+				7271C72F24715E2B0003204A /* RandomColor.m in Sources */,
+				724ACC5624854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7271C716246D49670003204A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7271C717246D49670003204A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7271C71B246D49690003204A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7271C71C246D49690003204A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7271C721246D49690003204A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7271C722246D49690003204A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7271C724246D49690003204A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F4DE548AB8BAF478F88257 /* Pods-TaboolaSDKExampleObjective-C.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = "TaboolaSDKExampleObjective-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taboola.TaboolaSDKExampleObjective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7271C725246D49690003204A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257C7CF900FD2384674CDFB2 /* Pods-TaboolaSDKExampleObjective-C.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = "TaboolaSDKExampleObjective-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taboola.TaboolaSDKExampleObjective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7271C705246D49670003204A /* Build configuration list for PBXProject "TaboolaSDKExampleObjective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7271C721246D49690003204A /* Debug */,
+				7271C722246D49690003204A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7271C723246D49690003204A /* Build configuration list for PBXNativeTarget "TaboolaSDKExampleObjective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7271C724246D49690003204A /* Debug */,
+				7271C725246D49690003204A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7271C702246D49670003204A /* Project object */;
+}
