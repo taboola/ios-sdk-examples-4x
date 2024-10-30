@@ -20,12 +20,14 @@ typedef NS_ENUM(NSInteger, Constants) {
 // Placement name to be used for the Taboola Widget
 static NSString * const placementBelowArticle       = @"Below Article";
 static NSString * const placementFeedWithoutVideo   = @"Feed without video";
+static NSString * const placementLimitedFeed        = @"Limited Feed";
+static NSString * const aboveArticePlacement        = @"Above Article";
 static NSString * const pageType                    = @"article";
 static NSString * const pageUrl                     = @"http://www.example.com";
-static NSString * const widgetMode_1x4              = @"alternating-widget-without-video-1x4";
 static NSString * const feedMode                    = @"thumbs-feed-01";
-static NSString * const aboveArticePlacement        = @"Above Article";
 static NSString * const widgetMode_1x1              = @"alternating-widget-without-video-1x1";
+static NSString * const widgetMode_1x4              = @"alternating-widget-without-video-1x4";
+static NSString * const widgetMode_1x8              = @"widget-with-8-cards";
 
 static NSString * const textToAdd                   = @"Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege";
 
