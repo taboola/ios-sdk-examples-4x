@@ -28,9 +28,21 @@ struct Constants {
     static let pageUrl = "http://www.example.com"
     static let nativeCell = "NativeViewControllerCell"
     static let randomCellIdentifier = "RandomCell"
+    
+    // Meta params
+    
+    static let publisherId = "sdk-tester-meta"
+    static let audienceNetworkApplicationId = "783094497262888"
+    static let audienceNetworkPlacementId = "783094497262888_864779472427723"
+    // Placements
+    static let metaPlacement = "Below Article Thumbnails"
 
+    // Modes
+    static let metaWidgetMode_1x1 = "meta-widget-1x1"
+    static let metaFeedMode = "alternating-thumbnails-a"
 
     static let textToAdd = "Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege"
+    
     static let nativeText = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
     
 }

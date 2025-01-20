@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>To be able to load Meta ads please allow tracking</string>
 </dict>
 </plist>

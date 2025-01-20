@@ -22,9 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Adding Taboola api-key to the whole application with the unique publisher-name "sdk-tester-demo" , required only for SDK Native
         publisherInfo.apiKey = "30dfcf6b094361ccc367bbbef5973bdaa24dbcd6"
         Taboola.initWith(publisherInfo)
-            
         return true
     }
-
 }
 
