@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AB8CEC52D37BAA200C2FFE6 /* ClassicMainScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CEC42D37BAA200C2FFE6 /* ClassicMainScrollViewController.m */; };
+		5AB8CEC92D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CEC82D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.m */; };
+		5AB8CECC2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CECB2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.m */; };
 		6A8C726DF9098A47C624F30A /* Pods_TaboolaSDKExampleObjective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */; };
 		724ACC5624854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */; };
 		724ACC5924865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC5824865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m */; };
@@ -31,6 +34,12 @@
 /* Begin PBXFileReference section */
 		06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleObjective_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257C7CF900FD2384674CDFB2 /* Pods-TaboolaSDKExampleObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; sourceTree = "<group>"; };
+		5AB8CEC32D37BAA200C2FFE6 /* ClassicMainScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicMainScrollViewController.h; sourceTree = "<group>"; };
+		5AB8CEC42D37BAA200C2FFE6 /* ClassicMainScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicMainScrollViewController.m; sourceTree = "<group>"; };
+		5AB8CEC72D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFrameMetaAdController.h; sourceTree = "<group>"; };
+		5AB8CEC82D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFrameMetaAdController.m; sourceTree = "<group>"; };
+		5AB8CECA2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicConstraintsMetaAdViewController.h; sourceTree = "<group>"; };
+		5AB8CECB2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicConstraintsMetaAdViewController.m; sourceTree = "<group>"; };
 		69F4DE548AB8BAF478F88257 /* Pods-TaboolaSDKExampleObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
 		720B1FBE24B4626000DF79D9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicTableViewManagedByTaboolaController.m; sourceTree = "<group>"; };
@@ -79,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB8CEC62D37BB9500C2FFE6 /* ThirdPartyDemand-Meta */ = {
+			isa = PBXGroup;
+			children = (
+				5AB8CEC72D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.h */,
+				5AB8CEC82D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.m */,
+				5AB8CECA2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.h */,
+				5AB8CECB2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.m */,
+			);
+			path = "ThirdPartyDemand-Meta";
+			sourceTree = "<group>";
+		};
 		725365BE247AA86300E33E22 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +113,7 @@
 		725365BF247AA86D00E33E22 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				5AB8CEC62D37BB9500C2FFE6 /* ThirdPartyDemand-Meta */,
 				724ACC6424866C1200337BD2 /* ClassicFrameScrollViewController.h */,
 				724ACC6224866C0A00337BD2 /* ClassicFrameScrollViewController.m */,
 				72BB672824B7207900D5A9D4 /* ClassicConstraintsScrollViewController.h */,
@@ -126,6 +147,8 @@
 				7271C70E246D49670003204A /* AppDelegate.m */,
 				7271C713246D49670003204A /* MainViewController.h */,
 				7271C714246D49670003204A /* MainViewController.m */,
+				5AB8CEC32D37BAA200C2FFE6 /* ClassicMainScrollViewController.h */,
+				5AB8CEC42D37BAA200C2FFE6 /* ClassicMainScrollViewController.m */,
 				720B1FBE24B4626000DF79D9 /* Constants.h */,
 				7271C7262471554F0003204A /* SDK Classic */,
 				7271C727247155770003204A /* SDK Web */,
@@ -318,18 +341,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7271C715246D49670003204A /* MainViewController.m in Sources */,
+				5AB8CEC92D37BBBA00C2FFE6 /* ClassicFrameMetaAdController.m in Sources */,
 				BAB379C628C6048C007E7007 /* WebViewContinuousScrollViewController.m in Sources */,
 				72A2D7C624852A390069625D /* NativeBannerViewController.m in Sources */,
 				7271C70F246D49670003204A /* AppDelegate.m in Sources */,
 				724ACC5924865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m in Sources */,
 				724ACC6324866C0A00337BD2 /* ClassicFrameScrollViewController.m in Sources */,
 				7271C720246D49690003204A /* main.m in Sources */,
+				5AB8CECC2D37BBF400C2FFE6 /* ClassicConstraintsMetaAdViewController.m in Sources */,
 				72A2D7BD247AC3970069625D /* WebViewController.m in Sources */,
 				72BB672724B7206B00D5A9D4 /* ClassicConstraintsScrollViewController.m in Sources */,
 				7271C73124716D230003204A /* ClassicCollectionViewManagedByPublisherController.m in Sources */,
 				7271C72A247157A60003204A /* ClassicCollectionViewManagedByTaboolaController.m in Sources */,
 				7271C72F24715E2B0003204A /* RandomColor.m in Sources */,
 				724ACC5624854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m in Sources */,
+				5AB8CEC52D37BAA200C2FFE6 /* ClassicMainScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

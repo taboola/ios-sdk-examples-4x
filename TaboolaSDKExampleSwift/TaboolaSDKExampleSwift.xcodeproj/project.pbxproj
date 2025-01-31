@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		26C569F4269B2A8800423171 /* NativeViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */; };
 		26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */; };
+		5AB8CEB32D354B2E00C2FFE6 /* ClassicFrameMetaAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CEB22D354B2E00C2FFE6 /* ClassicFrameMetaAdController.swift */; };
+		5AB8CEB82D36786D00C2FFE6 /* ClassicMainScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CEB72D36786D00C2FFE6 /* ClassicMainScrollViewController.swift */; };
+		5AB8CEC22D36AF4800C2FFE6 /* ClassicConstraintsMetaAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8CEC12D36AF4800C2FFE6 /* ClassicConstraintsMetaAdViewController.swift */; };
 		722CA6F4241792840022043F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F3241792840022043F /* AppDelegate.swift */; };
 		722CA6F8241792840022043F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F7241792840022043F /* MainViewController.swift */; };
 		722CA6FB241792840022043F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6F9241792840022043F /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 		26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewControllerCell.xib; sourceTree = "<group>"; };
 		26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewControllerCell.swift; sourceTree = "<group>"; };
 		37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB8CEB22D354B2E00C2FFE6 /* ClassicFrameMetaAdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFrameMetaAdController.swift; sourceTree = "<group>"; };
+		5AB8CEB72D36786D00C2FFE6 /* ClassicMainScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicMainScrollViewController.swift; sourceTree = "<group>"; };
+		5AB8CEC12D36AF4800C2FFE6 /* ClassicConstraintsMetaAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicConstraintsMetaAdViewController.swift; sourceTree = "<group>"; };
 		722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaboolaSDKExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722CA6F3241792840022043F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722CA6F7241792840022043F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB8CEAE2D354ADD00C2FFE6 /* ThirdPartyDemand-Meta */ = {
+			isa = PBXGroup;
+			children = (
+				5AB8CEB22D354B2E00C2FFE6 /* ClassicFrameMetaAdController.swift */,
+				5AB8CEC12D36AF4800C2FFE6 /* ClassicConstraintsMetaAdViewController.swift */,
+			);
+			path = "ThirdPartyDemand-Meta";
+			sourceTree = "<group>";
+		};
 		60902F694599DB3A7EB84DB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +116,7 @@
 			children = (
 				722CA6F3241792840022043F /* AppDelegate.swift */,
 				722CA6F7241792840022043F /* MainViewController.swift */,
+				5AB8CEB72D36786D00C2FFE6 /* ClassicMainScrollViewController.swift */,
 				7256529024A4DA08007C07EB /* Constants.swift */,
 				725461B12427A13400660672 /* SDK Classic */,
 				725461B42427A4BE00660672 /* SDK Web */,
@@ -119,6 +135,7 @@
 				7271C6FA24695D250003204A /* CollectionView */,
 				7271C6FB246966100003204A /* TableView */,
 				7271C6FC246966220003204A /* ScrollView */,
+				5AB8CEAE2D354ADD00C2FFE6 /* ThirdPartyDemand-Meta */,
 			);
 			path = "SDK Classic";
 			sourceTree = "<group>";
@@ -303,6 +320,7 @@
 			files = (
 				722CA6F8241792840022043F /* MainViewController.swift in Sources */,
 				72D7000A24503D0D004C967C /* ClassicFrameScrollViewController.swift in Sources */,
+				5AB8CEB32D354B2E00C2FFE6 /* ClassicFrameMetaAdController.swift in Sources */,
 				72BB672A24BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift in Sources */,
 				BAB379D228C61237007E7007 /* ContinuousScrollController.swift in Sources */,
 				26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */,
@@ -310,7 +328,9 @@
 				725461B62427A4D500660672 /* WebViewController.swift in Sources */,
 				7271C700246C01AD0003204A /* ClassicTableViewManagedByPublisher.swift in Sources */,
 				7256529124A4DA08007C07EB /* Constants.swift in Sources */,
+				5AB8CEB82D36786D00C2FFE6 /* ClassicMainScrollViewController.swift in Sources */,
 				725461BB2427BB4200660672 /* NativeViewController.swift in Sources */,
+				5AB8CEC22D36AF4800C2FFE6 /* ClassicConstraintsMetaAdViewController.swift in Sources */,
 				7271C6FE24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift in Sources */,
 				722CA6F4241792840022043F /* AppDelegate.swift in Sources */,
 				725461B32427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift in Sources */,
