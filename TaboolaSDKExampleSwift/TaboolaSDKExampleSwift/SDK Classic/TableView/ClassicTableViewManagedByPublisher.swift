@@ -50,14 +50,14 @@ extension ClassicTableViewManagedByPublisherController: UITableViewDataSource, U
             let cell = tableView.dequeueReusableCell(withIdentifier: taboolaCellIdentifier, for: indexPath)
             clearTaboolaInReusedCell(cell: cell)
             if let taboolaWidgetPlacement = taboolaWidgetPlacement {
-                cell.addSubview(taboolaWidgetPlacement)
+                cell.contentView.addSubview(taboolaWidgetPlacement)
             }
             return cell
         case Constants.taboolaFeedSection:
             let cell = tableView.dequeueReusableCell(withIdentifier: taboolaCellIdentifier, for: indexPath)
             clearTaboolaInReusedCell(cell: cell)
             if let taboolaFeedPlacement = taboolaFeedPlacement {
-                cell.addSubview(taboolaFeedPlacement)
+                cell.contentView.addSubview(taboolaFeedPlacement)
             }
             return cell
         default:
@@ -68,7 +68,7 @@ extension ClassicTableViewManagedByPublisherController: UITableViewDataSource, U
     }
     
     func clearTaboolaInReusedCell(cell :UITableViewCell) {
-        for view in cell.subviews {
+        for view in cell.contentView.subviews {
             view.removeFromSuperview()
         }
     }
