@@ -51,14 +51,14 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: taboolaCellIdentifier, for: indexPath)
             clearTaboolaInReusedCell(cell: cell)
             if let taboolaWidgetPlacement = taboolaWidgetPlacement {
-                cell.addSubview(taboolaWidgetPlacement)
+                cell.contentView.addSubview(taboolaWidgetPlacement)
             }
             return cell
         case Constants.taboolaFeedSection:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: taboolaCellIdentifier, for: indexPath)
             clearTaboolaInReusedCell(cell: cell)
             if let taboolaFeedPlacement = taboolaFeedPlacement {
-                cell.addSubview(taboolaFeedPlacement)
+                cell.contentView.addSubview(taboolaFeedPlacement)
             }
             return cell
         default:
@@ -69,7 +69,7 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
     }
     
     func clearTaboolaInReusedCell(cell: UICollectionViewCell) {
-        for view in cell.subviews {
+        for view in cell.contentView.subviews {
             view.removeFromSuperview()
         }
     }
