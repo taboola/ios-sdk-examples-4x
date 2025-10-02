@@ -16,8 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIView *top;
 @property (weak, nonatomic) IBOutlet UIView *bottom;
 
-// TBLClassicPage holds Taboola Widgets/Feed for a specific view
-@property (nonatomic, strong) TBLClassicPage* classicPage;
+
 // TBLClassicUnit object represnting Widget/Feed
 @property (nonatomic, strong) TBLClassicUnit* taboolaWidgetPlacement;
 @property (nonatomic, strong) TBLClassicUnit* taboolaFeedPlacement;
@@ -34,7 +33,7 @@
 - (void)taboolaInit {
     _classicPage = [[TBLClassicPage alloc]initWithPageType:pageType pageUrl:pageUrl delegate:self scrollView:_scrollView];
     
-    _taboolaWidgetPlacement = [_classicPage createUnitWithPlacementName:aboveArticePlacement mode:widgetMode_1x1];
+    _taboolaWidgetPlacement = [_classicPage createUnitWithPlacementName:placementBelowArticle mode:widgetMode_1x4];
     
     _taboolaFeedPlacement = [_classicPage createUnitWithPlacementName:placementFeedWithoutVideo mode:feedMode];
     _taboolaFeedPlacement.clipsToBounds = YES;

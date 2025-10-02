@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26C569F4269B2A8800423171 /* NativeViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */; };
 		26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */; };
+		5A4374C92E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4374C82E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift */; };
 		722CA6F4241792840022043F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F3241792840022043F /* AppDelegate.swift */; };
 		722CA6F8241792840022043F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F7241792840022043F /* MainViewController.swift */; };
 		722CA6FB241792840022043F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6F9241792840022043F /* Main.storyboard */; };
@@ -24,16 +25,16 @@
 		72BB672A24BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */; };
 		72D70006244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D70005244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift */; };
 		72D7000A24503D0D004C967C /* ClassicFrameScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */; };
-		91BA97C731448D934E9E2A2A /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */; };
 		BAB379CE28C610C1007E7007 /* SampleContinuousScrollPage.html in Resources */ = {isa = PBXBuildFile; fileRef = BAB379CD28C610C1007E7007 /* SampleContinuousScrollPage.html */; };
 		BAB379D228C61237007E7007 /* ContinuousScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB379D128C61237007E7007 /* ContinuousScrollController.swift */; };
+		EA928B59FEF6B1B0F2FD61B3 /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4321AE88DB47879AD403AF5 /* Pods_TaboolaSDKExampleSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		26C569F2269B2A8800423171 /* NativeViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeViewControllerCell.xib; sourceTree = "<group>"; };
 		26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewControllerCell.swift; sourceTree = "<group>"; };
-		37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4374C82E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicConstraintsScrollViewWithExploreMore.swift; sourceTree = "<group>"; };
+		6A1AA8C0EBB9DFD9E572D5DC /* Pods-TaboolaSDKExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaboolaSDKExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722CA6F3241792840022043F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722CA6F7241792840022043F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -51,11 +52,10 @@
 		72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicConstraintsScrollViewController.swift; sourceTree = "<group>"; };
 		72D70005244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicTableViewManagedByTaboolaController.swift; sourceTree = "<group>"; };
 		72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFrameScrollViewController.swift; sourceTree = "<group>"; };
+		A4321AE88DB47879AD403AF5 /* Pods_TaboolaSDKExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB379CD28C610C1007E7007 /* SampleContinuousScrollPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SampleContinuousScrollPage.html; sourceTree = "<group>"; };
 		BAB379D128C61237007E7007 /* ContinuousScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousScrollController.swift; sourceTree = "<group>"; };
-		C0AF67F2E6E0550FEC48A220 /* Pods-TaboolaSDKExampleV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleV3.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleV3/Pods-TaboolaSDKExampleV3.debug.xcconfig"; sourceTree = "<group>"; };
-		CD964DAFFF94D17B2ACDB84C /* Pods-TaboolaSDKExampleV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleV3.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleV3/Pods-TaboolaSDKExampleV3.release.xcconfig"; sourceTree = "<group>"; };
-		D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EA21D302FED165C6E7BA83D1 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,28 +63,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91BA97C731448D934E9E2A2A /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */,
+				EA928B59FEF6B1B0F2FD61B3 /* Pods_TaboolaSDKExampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60902F694599DB3A7EB84DB8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				37E3DFE1B76160DCA44AE917 /* Pods_TaboolaSDKExampleSwift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		722CA6E7241792840022043F = {
 			isa = PBXGroup;
 			children = (
 				722CA6F2241792840022043F /* TaboolaSDKExampleSwift */,
 				722CA6F1241792840022043F /* Products */,
 				F2A923B628886A3A56F7FF2B /* Pods */,
-				60902F694599DB3A7EB84DB8 /* Frameworks */,
+				DE72674A096FA91546F6BA2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,17 +159,24 @@
 			children = (
 				72D7000924503D0D004C967C /* ClassicFrameScrollViewController.swift */,
 				72BB672924BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift */,
+				5A4374C82E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		DE72674A096FA91546F6BA2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4321AE88DB47879AD403AF5 /* Pods_TaboolaSDKExampleSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F2A923B628886A3A56F7FF2B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0AF67F2E6E0550FEC48A220 /* Pods-TaboolaSDKExampleV3.debug.xcconfig */,
-				CD964DAFFF94D17B2ACDB84C /* Pods-TaboolaSDKExampleV3.release.xcconfig */,
-				D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */,
-				0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */,
+				EA21D302FED165C6E7BA83D1 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */,
+				6A1AA8C0EBB9DFD9E572D5DC /* Pods-TaboolaSDKExampleSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,11 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 722CA704241792850022043F /* Build configuration list for PBXNativeTarget "TaboolaSDKExampleSwift" */;
 			buildPhases = (
-				511CED58C855A6A57F4760EA /* [CP] Check Pods Manifest.lock */,
+				739B0A651F461C42D4596C24 /* [CP] Check Pods Manifest.lock */,
 				722CA6EC241792840022043F /* Sources */,
 				722CA6ED241792840022043F /* Frameworks */,
 				722CA6EE241792840022043F /* Resources */,
-				53CC3608EC2EFED37F6863B7 /* [CP] Embed Pods Frameworks */,
+				4FAE9690E11A4F715DA58BCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,7 +211,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Liad Elidan";
+				ORGANIZATIONNAME = Taboola;
 				TargetAttributes = {
 					722CA6EF241792840022043F = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -255,7 +254,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		511CED58C855A6A57F4760EA /* [CP] Check Pods Manifest.lock */ = {
+		4FAE9690E11A4F715DA58BCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		739B0A651F461C42D4596C24 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,23 +293,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53CC3608EC2EFED37F6863B7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,6 +304,7 @@
 				72D7000A24503D0D004C967C /* ClassicFrameScrollViewController.swift in Sources */,
 				72BB672A24BC8B2800D5A9D4 /* ClassicConstraintsScrollViewController.swift in Sources */,
 				BAB379D228C61237007E7007 /* ContinuousScrollController.swift in Sources */,
+				5A4374C92E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift in Sources */,
 				26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */,
 				72D70006244DD0B0004C967C /* ClassicTableViewManagedByTaboolaController.swift in Sources */,
 				725461B62427A4D500660672 /* WebViewController.swift in Sources */,
@@ -455,7 +455,7 @@
 		};
 		722CA705241792850022043F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4BB3D3BE6D8592311A73F29 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */;
+			baseConfigurationReference = EA21D302FED165C6E7BA83D1 /* Pods-TaboolaSDKExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -478,7 +478,7 @@
 		};
 		722CA706241792850022043F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E8CCC29E0091A1A93259432 /* Pods-TaboolaSDKExampleSwift.release.xcconfig */;
+			baseConfigurationReference = 6A1AA8C0EBB9DFD9E572D5DC /* Pods-TaboolaSDKExampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

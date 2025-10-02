@@ -37,6 +37,10 @@ static NSString * const randomCell                  = @"RandomCell";
 static NSString * const taboolaCollectionCell       = @"TaboolaCollectionViewCell";
 static NSString * const taboolaTableCell            = @"TaboolaTableViewCell";
 
+// Explore More
+static NSString * const placementExploreMore        = @"Feed - Explore More";
+static NSString * const customSegment               = @"subscriber";
+
 
 
 NS_ASSUME_NONNULL_END

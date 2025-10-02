@@ -30,7 +30,7 @@ class ClassicConstraintsScrollViewController: UIViewController {
     func taboolaInit() {
         classicPage = TBLClassicPage.init(pageType: Constants.pageTypeArticle, pageUrl: Constants.pageUrl, delegate: self, scrollView: scrollView)
         
-        taboolaWidgetPlacement = classicPage?.createUnit(withPlacementName: Constants.placementAboveArticle, mode: Constants.widgetMode_1x1)
+        taboolaWidgetPlacement = classicPage?.createUnit(withPlacementName: Constants.placementAboveArticle, mode: Constants.widgetMode_1x4)
         
         taboolaFeedPlacement = classicPage?.createUnit(withPlacementName: Constants.placementFeedWithoutVideo, mode: Constants.thumbsFeedMode)
 
