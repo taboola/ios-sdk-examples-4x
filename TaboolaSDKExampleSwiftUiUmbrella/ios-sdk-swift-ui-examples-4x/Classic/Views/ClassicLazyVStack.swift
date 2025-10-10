@@ -22,13 +22,13 @@ struct ClassicLazyVStack: View {
             LazyVStack {
                 LoremText()
                 ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                                   placement: Constants.widgetPlacement,
-                                   mode: Constants.mode,
+                                   placement: Constants.placementAboveArticle,
+                                   mode: Constants.widgetMode_1x4,
                                    height: $topHeight).frame(height: topHeight)
                 LoremText()
                 ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                                   placement: Constants.feedPlacement,
-                                   mode: Constants.mode,
+                                   placement: Constants.placementFeedWithoutVideo,
+                                   mode: Constants.thumbsFeedMode,
                                    height: $feedHeight).frame(height: feedHeight)
             }
         }
