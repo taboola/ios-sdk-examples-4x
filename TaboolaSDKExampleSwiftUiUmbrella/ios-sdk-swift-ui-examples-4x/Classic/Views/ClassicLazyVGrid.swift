@@ -26,8 +26,8 @@ struct ClassicLazyVGrid: View {
                     switch index {
                     case 0:
                         ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                                           placement: Constants.widgetPlacement,
-                                           mode: Constants.mode,
+                                           placement: Constants.placementAboveArticle,
+                                           mode: Constants.widgetMode_1x4,
                                            height: $topHeight).frame(height:topHeight)
                             .background(colors[index % colors.count])
                             .cornerRadius(8)
@@ -38,8 +38,8 @@ struct ClassicLazyVGrid: View {
                             .cornerRadius(8)
                     default:
                         ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                                           placement: Constants.feedPlacement,
-                                           mode: Constants.mode,
+                                           placement: Constants.placementFeedWithoutVideo,
+                                           mode: Constants.thumbsFeedMode,
                                            height: $feedHeight).frame(height:feedHeight)
                             .background(colors[index % colors.count])
                             .cornerRadius(8)

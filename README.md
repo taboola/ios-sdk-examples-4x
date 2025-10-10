@@ -1,6 +1,6 @@
 # ios-sdk-examples-4x
 
-Latest iOS SDK Version: 4.0.20
+Latest iOS SDK Version: 4.0.22
 
 Taboola SDK allows publisher to display Taboola's Widgets and Feed within their iOS apps
 

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A5A1C402DE43EB8005456F1 /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 5A5A1C3F2DE43EB8005456F1 /* TaboolaSDK-SwiftUI-Umbrella */; };
+		5A3E99022E043FA20071FB5F /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 5A3E99012E043FA20071FB5F /* TaboolaSDK-SwiftUI-Umbrella */; };
+		5A4374D72E8ABB65007DD9F0 /* ClassicVStackWithExploreMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4374D62E8ABB65007DD9F0 /* ClassicVStackWithExploreMore.swift */; };
 		5ACFAD092DE0968B0030F6EC /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACFAD082DE0968B0030F6EC /* TaboolaSDK-SwiftUI-Umbrella */; };
 		D80E14A4283B8BD40014FD09 /* TaboolaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E14A3283B8BD40014FD09 /* TaboolaSwiftUIApp.swift */; };
 		D80E14A8283B8BD50014FD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80E14A7283B8BD50014FD09 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A4374D62E8ABB65007DD9F0 /* ClassicVStackWithExploreMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicVStackWithExploreMore.swift; sourceTree = "<group>"; };
 		D80E14A0283B8BD40014FD09 /* ios-sdk-swift-ui-examples-4x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-sdk-swift-ui-examples-4x.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80E14A3283B8BD40014FD09 /* TaboolaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaboolaSwiftUIApp.swift; sourceTree = "<group>"; };
 		D80E14A7283B8BD50014FD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5A1C402DE43EB8005456F1 /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */,
+				5A3E99022E043FA20071FB5F /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */,
 				5ACFAD092DE0968B0030F6EC /* TaboolaSDK-SwiftUI-Umbrella in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +134,7 @@
 				D80E14B3283B8C680014FD09 /* ClassicList.swift */,
 				D80E14B5283B8C680014FD09 /* ClassicTabView.swift */,
 				D80E14BA283B8C680014FD09 /* ClassicPageView.swift */,
+				5A4374D62E8ABB65007DD9F0 /* ClassicVStackWithExploreMore.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,7 +249,7 @@
 			name = "ios-sdk-swift-ui-examples-4x";
 			packageProductDependencies = (
 				5ACFAD082DE0968B0030F6EC /* TaboolaSDK-SwiftUI-Umbrella */,
-				5A5A1C3F2DE43EB8005456F1 /* TaboolaSDK-SwiftUI-Umbrella */,
+				5A3E99012E043FA20071FB5F /* TaboolaSDK-SwiftUI-Umbrella */,
 			);
 			productName = "ios-sdk-swift-ui-examples-3x";
 			productReference = D80E14A0283B8BD40014FD09 /* ios-sdk-swift-ui-examples-4x.app */;
@@ -277,7 +280,7 @@
 			);
 			mainGroup = D80E1497283B8BD40014FD09;
 			packageReferences = (
-				5A5A1C3E2DE43EB8005456F1 /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */,
+				5A3E99002E043FA20071FB5F /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */,
 			);
 			productRefGroup = D80E14A1283B8BD40014FD09 /* Products */;
 			projectDirPath = "";
@@ -322,6 +325,7 @@
 				D80E14A4283B8BD40014FD09 /* TaboolaSwiftUIApp.swift in Sources */,
 				D80E14C2283B8C680014FD09 /* ClassicVStack.swift in Sources */,
 				D897072C2865B34C0001B66B /* NativeLazyVStack.swift in Sources */,
+				5A4374D72E8ABB65007DD9F0 /* ClassicVStackWithExploreMore.swift in Sources */,
 				D80E14C1283B8C680014FD09 /* LoremText.swift in Sources */,
 				D8913E3228759A14004CD15E /* WebPageWrapper.swift in Sources */,
 				D897072B2865B34C0001B66B /* NativeLazyVGrid.swift in Sources */,
@@ -536,20 +540,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5A5A1C3E2DE43EB8005456F1 /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */ = {
+		5A3E99002E043FA20071FB5F /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/taboola/taboola-swift-ui-umbrella";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.10;
+				minimumVersion = 4.0.21;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5A5A1C3F2DE43EB8005456F1 /* TaboolaSDK-SwiftUI-Umbrella */ = {
+		5A3E99012E043FA20071FB5F /* TaboolaSDK-SwiftUI-Umbrella */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5A5A1C3E2DE43EB8005456F1 /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */;
+			package = 5A3E99002E043FA20071FB5F /* XCRemoteSwiftPackageReference "taboola-swift-ui-umbrella" */;
 			productName = "TaboolaSDK-SwiftUI-Umbrella";
 		};
 		5ACFAD082DE0968B0030F6EC /* TaboolaSDK-SwiftUI-Umbrella */ = {

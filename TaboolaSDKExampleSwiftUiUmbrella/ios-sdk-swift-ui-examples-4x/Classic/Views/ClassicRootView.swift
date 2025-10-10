@@ -33,6 +33,9 @@ struct ClassicRootView: View {
             NavigationLink(destination: LazyView(ClassicPageView(title: "PageView"))) {
                 Text("PageView")
             }
+            NavigationLink(destination: LazyView(ClassicVStackWithExploreMore(title: "VStack"))) {
+                Text("VStack with Explore More")
+            }
         }
         .navigationBarTitle("Classic", displayMode: .inline)
     }

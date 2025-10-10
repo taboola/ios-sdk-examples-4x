@@ -21,13 +21,13 @@ struct ClassicList: View {
         List {
             LoremText()
             ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                               placement: Constants.widgetPlacement,
-                               mode: Constants.mode,
+                               placement: Constants.placementAboveArticle,
+                               mode: Constants.widgetMode_1x4,
                                height: $topHeight).frame(height: topHeight, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             LoremText()
             ClassicUnitSwiftUI(pageWrapper: pageWrapper,
-                               placement: Constants.feedPlacement,
-                               mode: Constants.mode,
+                               placement: Constants.placementFeedWithoutVideo,
+                               mode: Constants.thumbsFeedMode,
                                height: $feedHeight).frame(height: feedHeight, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
         .navigationBarTitle(title, displayMode: .inline)
