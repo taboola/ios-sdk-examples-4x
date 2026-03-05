@@ -3,6 +3,7 @@
 
 target 'TaboolaSDKExampleObjective-C' do
   use_frameworks!
+#  pod 'TaboolaSDK', :path => '../../ios-sdk/SDK' 
   pod 'TaboolaSDK', '~>4.0' 
 
   end

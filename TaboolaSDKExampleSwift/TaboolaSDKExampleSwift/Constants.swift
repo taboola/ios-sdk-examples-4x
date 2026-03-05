@@ -24,6 +24,7 @@ struct Constants {
     static let widgetMode_1x1 = "alternating-widget-without-video-1x1"
     static let widgetMode_1x4 = "alternating-widget-without-video-1x4"
     static let widgetMode_1x8 = "widget-with-8-cards";
+    static let widgetMode_5050 = "alternating-widget-without-video"
     static let thumbsFeedMode = "thumbs-feed-01"
     static let pageUrl = "http://www.example.com"
     static let nativeCell = "NativeViewControllerCell"
@@ -31,6 +32,7 @@ struct Constants {
     //Explore More
     static let placementExploreMore = "Feed - Explore More"
     static let customSegment = "subscriber"
+    static let placementInterstitial = "Trigger Interstitial"
 
 
     static let textToAdd = "Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege Interdum et malesuada fames ac ante ipsum! \n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacus lorem, tristique vel molestie sed, laoreet in felis. Pellentesque consectetur massa libero, in bibendum nisl euismod ultricies. Vestibulum eros neque, venenatis id luctus id, ornare eu lorem. Duis elementum neque ut erat elementum fermentum eget ege"

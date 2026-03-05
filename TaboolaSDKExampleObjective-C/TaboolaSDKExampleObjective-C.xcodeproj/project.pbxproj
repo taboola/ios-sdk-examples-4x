@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C35F28D2F505A90002C0A4F /* ClassicInterstitialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C35F28C2F505A90002C0A4F /* ClassicInterstitialController.m */; };
 		5A4374CE2E8A6674007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4374CD2E8A6674007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.m */; };
 		6A8C726DF9098A47C624F30A /* Pods_TaboolaSDKExampleObjective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */; };
 		724ACC5624854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ACC5524854CC100337BD2 /* ClassicTableViewManagedByTaboolaController.m */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		06B2EDC0A8E98E88B59CF67B /* Pods_TaboolaSDKExampleObjective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaboolaSDKExampleObjective_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257C7CF900FD2384674CDFB2 /* Pods-TaboolaSDKExampleObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.release.xcconfig"; sourceTree = "<group>"; };
+		2C35F28B2F505A90002C0A4F /* ClassicInterstitialController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicInterstitialController.h; sourceTree = "<group>"; };
+		2C35F28C2F505A90002C0A4F /* ClassicInterstitialController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicInterstitialController.m; sourceTree = "<group>"; };
 		5A4374CC2E8A6674007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicConstraintsScrollViewWithExploreMore.h; sourceTree = "<group>"; };
 		5A4374CD2E8A6674007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicConstraintsScrollViewWithExploreMore.m; sourceTree = "<group>"; };
 		69F4DE548AB8BAF478F88257 /* Pods-TaboolaSDKExampleObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleObjective-C/Pods-TaboolaSDKExampleObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C35F28A2F505A5B002C0A4F /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				2C35F28B2F505A90002C0A4F /* ClassicInterstitialController.h */,
+				2C35F28C2F505A90002C0A4F /* ClassicInterstitialController.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
 		725365BE247AA86300E33E22 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		7271C7262471554F0003204A /* SDK Classic */ = {
 			isa = PBXGroup;
 			children = (
+				2C35F28A2F505A5B002C0A4F /* Interstitial */,
 				7271C72B247157AD0003204A /* CollectionView */,
 				725365BE247AA86300E33E22 /* TableView */,
 				725365BF247AA86D00E33E22 /* ScrollView */,
@@ -328,6 +341,7 @@
 				72A2D7C624852A390069625D /* NativeBannerViewController.m in Sources */,
 				7271C70F246D49670003204A /* AppDelegate.m in Sources */,
 				724ACC5924865E7400337BD2 /* ClassicTableViewManagedByPublisherController.m in Sources */,
+				2C35F28D2F505A90002C0A4F /* ClassicInterstitialController.m in Sources */,
 				724ACC6324866C0A00337BD2 /* ClassicFrameScrollViewController.m in Sources */,
 				7271C720246D49690003204A /* main.m in Sources */,
 				72A2D7BD247AC3970069625D /* WebViewController.m in Sources */,
@@ -487,6 +501,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taboola.TaboolaSDKExampleObjective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -507,6 +522,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taboola.TaboolaSDKExampleObjective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
