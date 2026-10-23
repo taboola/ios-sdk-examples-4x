@@ -14,10 +14,10 @@ class ClassicConstraintsScrollViewWithExploreMore: ClassicConstraintsScrollViewC
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBackButton()
-        classicPage?.initExploreMore(withPlacement: Constants.placementExploreMore,
-                                     mode: Constants.thumbsFeedMode,
-                                     delegate: self,
-                                     customSegment: Constants.customSegment)
+        classicPage?.initializeExploreMore(withPlacement: Constants.placementExploreMore,
+                                           mode: Constants.thumbsFeedMode,
+                                           delegate: self,
+                                           customSegment: Constants.customSegment)
     }
     
     @objc private func triggerExploreMore() {
@@ -37,6 +37,10 @@ class ClassicConstraintsScrollViewWithExploreMore: ClassicConstraintsScrollViewC
 // MARK: - Explore More delegate
 
 extension ClassicConstraintsScrollViewWithExploreMore: TBLClassicExploreMoreDelegate {
+    func exploreMoreDidLoad() {
+        print("Explore More did load")
+    }
+
     func exploreMoreDidOpen() {
         print("Explore More did open")
     }

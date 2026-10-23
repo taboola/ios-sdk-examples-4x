@@ -48,17 +48,11 @@ extension ClassicTableViewManagedByPublisherController: UITableViewDataSource, U
         switch indexPath.section {
         case Constants.taboolaWidgetSection:
             let cell = tableView.dequeueReusableCell(withIdentifier: taboolaCellIdentifier, for: indexPath)
-            clearTaboolaInReusedCell(cell: cell)
-            if let taboolaWidgetPlacement = taboolaWidgetPlacement {
-                cell.contentView.addSubview(taboolaWidgetPlacement)
-            }
+            attachTaboolaUnit(taboolaWidgetPlacement, to: cell)
             return cell
         case Constants.taboolaFeedSection:
             let cell = tableView.dequeueReusableCell(withIdentifier: taboolaCellIdentifier, for: indexPath)
-            clearTaboolaInReusedCell(cell: cell)
-            if let taboolaFeedPlacement = taboolaFeedPlacement {
-                cell.contentView.addSubview(taboolaFeedPlacement)
-            }
+            attachTaboolaUnit(taboolaFeedPlacement, to: cell)
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.randomCellIdentifier, for: indexPath)
@@ -67,6 +61,15 @@ extension ClassicTableViewManagedByPublisherController: UITableViewDataSource, U
         }
     }
     
+    func attachTaboolaUnit(_ unit: TBLClassicUnit?, to cell: UITableViewCell) {
+        clearTaboolaInReusedCell(cell: cell)
+        guard let unit = unit else { return }
+        // The unit fills the cell and follows its size from here on, e.g. on rotation or when the placement resizes
+        unit.frame = cell.contentView.bounds
+        unit.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        cell.contentView.addSubview(unit)
+    }
+
     func clearTaboolaInReusedCell(cell :UITableViewCell) {
         for view in cell.contentView.subviews {
             view.removeFromSuperview()
@@ -97,12 +100,7 @@ extension ClassicTableViewManagedByPublisherController: UITableViewDataSource, U
 extension ClassicTableViewManagedByPublisherController: TBLClassicPageDelegate {
     func classicUnit(_ classicUnit: UIView!, didLoadOrResizePlacementName placementName: String!, height: CGFloat, placementType: PlacementType) {
         print("Placement name: \(String(describing: placementName)) has been loaded with height: \(height)")
-        if placementName == Constants.placementBelowArticle {
-            taboolaWidgetPlacement?.frame = CGRect(x: 0,y: 0,width: self.view.frame.size.width,height: taboolaWidgetPlacement?.placementHeight ?? 200)
-        }
-        else {
-            taboolaFeedPlacement?.frame = CGRect(x: taboolaFeedPlacement?.frame.origin.x ?? 0,y: taboolaFeedPlacement?.frame.origin.y ?? 0,width: self.view.frame.size.width,height: taboolaFeedPlacement?.placementHeight ?? 200)
-        }
+        // Row heights are read from placementHeight; the unit follows its cell
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
     }

@@ -12,6 +12,10 @@
 
 @interface NativeBannerViewController () <TBLNativePageDelegate,UITableViewDataSource>
 
+// The page and unit must stay alive until the fetch completes: the SDK only holds them weakly
+@property (nonatomic, strong) TBLNativePage* nativePage;
+@property (nonatomic, strong) TBLNativeUnit* taboolaUnit;
+
 // TBLNativeItem object that will hold taboola native recommendations
 @property (nonatomic, strong) TBLNativeItem* taboolaItem;
 
@@ -32,18 +36,19 @@
 }
 
 - (void)taboolaInit {
-    TBLNativePage *nativePage = [[TBLNativePage alloc]initWithDelegate:self sourceType:SourceTypeText pageUrl:@"http://www.example.com"];
-    
-    TBLNativeUnit *taboolaUnit = [nativePage createUnitWithPlacement:@"Below Article" numberOfItems:1];
-    
-    [taboolaUnit fetchContentOnSuccess:^(TBLRecommendationResponse *response) {
+    _nativePage = [[TBLNativePage alloc]initWithDelegate:self sourceType:SourceTypeText pageUrl:@"http://www.example.com"];
+
+    _taboolaUnit = [_nativePage createUnitWithPlacement:@"Below Article" numberOfItems:1];
+
+    __weak typeof(self) weakSelf = self;
+    [_taboolaUnit fetchContentOnSuccess:^(TBLRecommendationResponse *response) {
         if (response.items.count > 0) {
             TBLNativeItem *item1 = response.items[0];
             if (item1 != nil) {
-                [item1 initThumbnailView:self.imageView];
-                [item1 initTitleView:self.titleView];
-                [item1 initBrandingView:self.brandingView];
-                [item1 initThumbnailView:self.imageView completed:^(NSError *error, UIImage *image) {
+                [item1 initThumbnailView:weakSelf.imageView];
+                [item1 initTitleView:weakSelf.titleView];
+                [item1 initBrandingView:weakSelf.brandingView];
+                [item1 initThumbnailView:weakSelf.imageView completed:^(NSError *error, UIImage *image) {
                     if (error) {
                         NSLog(@"error: %@",error.description);
                     }

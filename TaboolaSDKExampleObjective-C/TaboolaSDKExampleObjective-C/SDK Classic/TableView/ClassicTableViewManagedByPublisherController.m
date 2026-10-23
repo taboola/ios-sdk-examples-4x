@@ -45,14 +45,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == taboolaWidgetSection){
         UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:taboolaTableCell forIndexPath:indexPath];
-        [self clearTaboolaInReusedCell:cell];
-        [cell.contentView addSubview:_taboolaWidgetPlacement];
+        [self attachTaboolaUnit:_taboolaWidgetPlacement toCell:cell];
         return cell;
     }
     else if (indexPath.section == taboolaFeedSection){
         UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:taboolaTableCell forIndexPath:indexPath];
-        [self clearTaboolaInReusedCell:cell];
-        [cell.contentView addSubview:_taboolaFeedPlacement];
+        [self attachTaboolaUnit:_taboolaFeedPlacement toCell:cell];
         return cell;
     }
     else {
@@ -60,6 +58,14 @@
         cell.contentView.backgroundColor = [RandomColor setRandomColor];
         return cell;
     }
+}
+
+- (void)attachTaboolaUnit:(TBLClassicUnit *)unit toCell:(UITableViewCell *)cell {
+    [self clearTaboolaInReusedCell:cell];
+    // The unit fills the cell and follows its size from here on, e.g. on rotation or when the placement resizes
+    unit.frame = cell.contentView.bounds;
+    unit.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [cell.contentView addSubview:unit];
 }
 
 - (void)clearTaboolaInReusedCell:(UITableViewCell*)cell {
@@ -94,12 +100,8 @@
 
 - (void)classicUnit:(UIView *)classicUnit didLoadOrResizePlacementName:(NSString *)placementName height:(CGFloat)height placementType:(PlacementType)placementType{
     NSLog(@"%@", placementName);
-    
-    if ([placementName containsString:placementBelowArticle]) {
-        [_taboolaWidgetPlacement setFrame:CGRectMake(0, 0, self.view.frame.size.width, _taboolaWidgetPlacement.placementHeight)];
-    } else {
-        [_taboolaFeedPlacement setFrame:CGRectMake(_taboolaFeedPlacement.frame.origin.x, _taboolaFeedPlacement.frame.origin.y, self.view.frame.size.width, _taboolaFeedPlacement.placementHeight)];
-    }
+
+    // Row heights are read from placementHeight; the unit follows its cell
     [self.tableView beginUpdates];
     [self.tableView endUpdates];
 }

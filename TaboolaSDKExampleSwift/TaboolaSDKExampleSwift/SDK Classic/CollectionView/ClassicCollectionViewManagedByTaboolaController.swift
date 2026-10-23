@@ -36,6 +36,15 @@ class ClassicCollectionViewManagedByTaboolaController: UIViewController {
             taboolaFeedPlacement.fetchContent()
         }
     }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        // Flow layout keeps the item sizes it has cached when only its bounds change, so cells would stay at
+        // the pre-rotation width. Invalidating alongside the transition asks for sizes once the new bounds are in place.
+        coordinator.animate(alongsideTransition: { [weak self] _ in
+            self?.collectionView.collectionViewLayout.invalidateLayout()
+        })
+    }
 }
 
 extension ClassicCollectionViewManagedByTaboolaController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -76,7 +85,7 @@ extension ClassicCollectionViewManagedByTaboolaController: UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var widgetSize = CGSize(width: self.view.frame.size.width, height: 200)
+        var widgetSize = CGSize(width: collectionView.bounds.size.width, height: 200)
 
         if indexPath.section == Constants.taboolaWidgetSection {
             if let taboolaSize = taboolaWidgetPlacement?.collectionView(collectionView, layout: collectionView.collectionViewLayout, sizeForItemAt: indexPath, withUIInsets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)) {

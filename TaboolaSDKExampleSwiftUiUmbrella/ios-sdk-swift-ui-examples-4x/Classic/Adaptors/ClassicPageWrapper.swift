@@ -8,7 +8,7 @@
 import TaboolaSDK
 import TaboolaSDK_SwiftUI_Umbrella
 
-class ClassicPageWrapper: NSObject, TBLClassicPageDelegate, СlassicPageWrappable, TBLClassicExploreMoreDelegate {
+class ClassicPageWrapper: NSObject, TBLClassicPageDelegate, СlassicPageWrappable {
     
     var page: TBLClassicPage!
     @Weak var delegates: [Coordinator]
@@ -39,14 +39,15 @@ class ClassicPageWrapper: NSObject, TBLClassicPageDelegate, СlassicPageWrappabl
                      isOrganic organic: Bool) -> Bool {
         return organic
     }
-    
-    //    MARK: Explore More
-    
+}
+
+//    MARK: Explore More
+extension ClassicPageWrapper: TBLClassicExploreMoreDelegate {
     func initExploreMore() { // Init once per screen
-        page.initExploreMore(withPlacement: Constants.placementExploreMore,
-                             mode: Constants.thumbsFeedMode,
-                             delegate: self,
-                             customSegment: Constants.customSegment)
+        page.initializeExploreMore(withPlacement: Constants.placementExploreMore,
+                                   mode: Constants.thumbsFeedMode,
+                                   delegate: self,
+                                   customSegment: Constants.customSegment)
     }
     
     func showExploreMore() { // Call on desired action/event
@@ -54,6 +55,9 @@ class ClassicPageWrapper: NSObject, TBLClassicPageDelegate, СlassicPageWrappabl
     }
     
     // MARK: - TBLClassicExploreMoreDelegate
+    func exploreMoreDidLoad() {
+        print("Explore More did load")
+    }
 
     func exploreMoreDidOpen() {
         print("Explore More did open")

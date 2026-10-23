@@ -21,7 +21,16 @@ class NativeViewController: UIViewController {
         self.collectionView.register(UINib(nibName: Constants.nativeCell, bundle: nil), forCellWithReuseIdentifier: Constants.nativeCell)
         taboolaInit()
     }
-    
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        // Flow layout keeps the item sizes it has cached when only its bounds change, so cells would stay at
+        // the pre-rotation size. Invalidating alongside the transition asks for sizes once the new bounds are in place.
+        coordinator.animate(alongsideTransition: { [weak self] _ in
+            self?.collectionView.collectionViewLayout.invalidateLayout()
+        })
+    }
+
     func taboolaInit() {
         nativePage =  TBLNativePage.init(delegate: self, sourceType: SourceTypeText, pageUrl: Constants.pageUrl)
         taboolaUnit = nativePage?.createUnit(withPlacement: Constants.widgetMode_1x4, numberOfItems: 5)
@@ -73,12 +82,9 @@ extension NativeViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var width = UIScreen.main.bounds.size.width
-        if let interfaceOrientation = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.windowScene?.interfaceOrientation {
-            if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
-                width = UIScreen.main.bounds.size.height
-            }
-        }
+        // The collection view's own bounds already follow the interface orientation, so the width is
+        // read the same way in portrait and landscape
+        let width = collectionView.bounds.size.width
         return CGSize(width: width, height: width)
     }
     

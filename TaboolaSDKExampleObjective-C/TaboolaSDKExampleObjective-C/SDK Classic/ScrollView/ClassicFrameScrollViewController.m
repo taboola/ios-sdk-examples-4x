@@ -28,31 +28,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.frame = [UIScreen mainScreen].bounds;
-    
-    _topText = [[UILabel alloc] initWithFrame:self.view.bounds];
+
+    _topText = [[UILabel alloc] init];
     [_scrollView addSubview:_topText];
     _topText.text = textToAdd;
 
     _topText.numberOfLines = 0;
     _topText.lineBreakMode = NSLineBreakByWordWrapping;
     
-    [_topText sizeToFit];
-    
     [self taboolaInit];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // Frames don't follow the scroll view on their own, so they are laid out again when its width changes, e.g. on rotation
+    if (_topText.frame.size.width != _scrollView.bounds.size.width) {
+        [self layoutContentWithFeedHeight:_taboolaFeedPlacement.frame.size.height];
+    }
 }
 
 - (void)taboolaInit {
     _classicPage = [[TBLClassicPage alloc]initWithPageType:pageType pageUrl:pageUrl delegate:self scrollView:_scrollView];
     
     _taboolaFeedPlacement = [_classicPage createUnitWithPlacementName:placementFeedWithoutVideo mode:feedMode];
-    [_taboolaFeedPlacement setFrame:CGRectMake(0, _topText.frame.size.height, self.view.frame.size.width, 200)];
     [_scrollView addSubview:_taboolaFeedPlacement];
+    [self layoutContentWithFeedHeight:200];
 
-    _scrollView.contentSize = CGSizeMake(self.view.frame.size.width, _taboolaFeedPlacement.placementHeight + _topText.frame.size.height);
-    [self.view addSubview:_scrollView];
-    
     [_taboolaFeedPlacement fetchContent];
+}
+
+- (void)layoutContentWithFeedHeight:(CGFloat)feedHeight {
+    // Content is sized to the scroll view, which is inset from the screen edges by the safe area in landscape
+    CGFloat width = _scrollView.bounds.size.width;
+    CGFloat textHeight = [_topText sizeThatFits:CGSizeMake(width, CGFLOAT_MAX)].height;
+    _topText.frame = CGRectMake(0, 0, width, textHeight);
+
+    [_taboolaFeedPlacement setFrame:CGRectMake(0, _topText.frame.size.height, width, feedHeight)];
+    _scrollView.contentSize = CGSizeMake(width, feedHeight + _topText.frame.size.height);
 }
 
 - (void)dealloc {
@@ -65,8 +77,7 @@
 - (void)classicUnit:(UIView *)classicUnit didLoadOrResizePlacementName:(NSString *)placementName height:(CGFloat)height placementType:(PlacementType)placementType{
     NSLog(@"%@", placementName);
 
-    _scrollView.contentSize = CGSizeMake(self.view.frame.size.width, _taboolaFeedPlacement.placementHeight + _topText.frame.size.height);
-    [_taboolaFeedPlacement setFrame:CGRectMake(0, _topText.frame.size.height, self.view.frame.size.width, _taboolaFeedPlacement.placementHeight)];
+    [self layoutContentWithFeedHeight:_taboolaFeedPlacement.placementHeight];
 }
 
 - (void)classicUnit:(UIView *)classicUnit didFailToLoadPlacementName:(NSString *)placementName errorMessage:(NSString *)error{

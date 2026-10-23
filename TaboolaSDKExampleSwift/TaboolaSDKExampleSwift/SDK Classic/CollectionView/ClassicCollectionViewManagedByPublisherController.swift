@@ -38,9 +38,18 @@ class ClassicCollectionViewManagedByPublisherController: UIViewController {
         if let taboolaFeedPlacement = taboolaFeedPlacement {
             taboolaFeedPlacement.fetchContent()
         }
-        
+
     }
-  
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        // Flow layout keeps the item sizes it has cached when only its bounds change, so cells would stay at
+        // the pre-rotation width. Invalidating alongside the transition asks for sizes once the new bounds are in place.
+        coordinator.animate(alongsideTransition: { [weak self] _ in
+            self?.collectionView.collectionViewLayout.invalidateLayout()
+        })
+    }
+
 }
 
 extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -49,17 +58,11 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
         switch indexPath.section {
         case Constants.taboolaWidgetSection:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: taboolaCellIdentifier, for: indexPath)
-            clearTaboolaInReusedCell(cell: cell)
-            if let taboolaWidgetPlacement = taboolaWidgetPlacement {
-                cell.contentView.addSubview(taboolaWidgetPlacement)
-            }
+            attachTaboolaUnit(taboolaWidgetPlacement, to: cell)
             return cell
         case Constants.taboolaFeedSection:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: taboolaCellIdentifier, for: indexPath)
-            clearTaboolaInReusedCell(cell: cell)
-            if let taboolaFeedPlacement = taboolaFeedPlacement {
-                cell.contentView.addSubview(taboolaFeedPlacement)
-            }
+            attachTaboolaUnit(taboolaFeedPlacement, to: cell)
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.randomCellIdentifier, for: indexPath)
@@ -68,6 +71,15 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
         }
     }
     
+    func attachTaboolaUnit(_ unit: TBLClassicUnit?, to cell: UICollectionViewCell) {
+        clearTaboolaInReusedCell(cell: cell)
+        guard let unit = unit else { return }
+        // The unit fills the cell and follows its size from here on, e.g. on rotation or when the placement resizes
+        unit.frame = cell.contentView.bounds
+        unit.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        cell.contentView.addSubview(unit)
+    }
+
     func clearTaboolaInReusedCell(cell: UICollectionViewCell) {
         for view in cell.contentView.subviews {
             view.removeFromSuperview()
@@ -83,13 +95,15 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Items span the collection view, which is inset from the screen edges by the safe area in landscape
+        let width = collectionView.bounds.size.width
         switch indexPath.section {
         case Constants.taboolaWidgetSection:
-            return CGSize(width: self.view.frame.size.width, height: taboolaWidgetPlacement?.placementHeight ?? 200)
+            return CGSize(width: width, height: taboolaWidgetPlacement?.placementHeight ?? 200)
         case Constants.taboolaFeedSection:
-            return CGSize(width: self.view.frame.size.width, height: taboolaFeedPlacement?.placementHeight ?? 200)
+            return CGSize(width: width, height: taboolaFeedPlacement?.placementHeight ?? 200)
         default:
-            return CGSize(width: self.view.frame.size.width, height: 200)
+            return CGSize(width: width, height: 200)
         }
     }
 }
@@ -97,12 +111,7 @@ extension ClassicCollectionViewManagedByPublisherController: UICollectionViewDat
 extension ClassicCollectionViewManagedByPublisherController: TBLClassicPageDelegate {
     func classicUnit(_ classicUnit: UIView!, didLoadOrResizePlacementName placementName: String!, height: CGFloat, placementType: PlacementType) {
         print("Placement name: \(String(describing: placementName)) has been loaded with height: \(height)")
-        if placementName == Constants.placementBelowArticle {
-            taboolaWidgetPlacement?.frame = CGRect(x: 0,y: 0,width: self.view.frame.size.width,height: taboolaWidgetPlacement?.placementHeight ?? 200)
-        }
-        else {
-            taboolaFeedPlacement?.frame = CGRect(x: taboolaFeedPlacement?.frame.origin.x ?? 0,y: taboolaFeedPlacement?.frame.origin.y ?? 0,width: self.view.frame.size.width,height: taboolaFeedPlacement?.placementHeight ?? 200)
-        }
+        // Item sizes are read from placementHeight; the unit follows its cell
         self.collectionView.collectionViewLayout.invalidateLayout()
     }
     
