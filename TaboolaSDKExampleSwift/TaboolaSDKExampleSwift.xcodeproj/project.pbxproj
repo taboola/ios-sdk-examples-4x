@@ -11,6 +11,7 @@
 		26C569F6269B2ADD00423171 /* NativeViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C569F5269B2ADD00423171 /* NativeViewControllerCell.swift */; };
 		5A4374C92E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4374C82E86AD75007DD9F0 /* ClassicConstraintsScrollViewWithExploreMore.swift */; };
 		722CA6F4241792840022043F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F3241792840022043F /* AppDelegate.swift */; };
+		408866BE560EC1AA92D5D36E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4EF12375E443FA42160B3 /* SceneDelegate.swift */; };
 		722CA6F8241792840022043F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CA6F7241792840022043F /* MainViewController.swift */; };
 		722CA6FB241792840022043F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6F9241792840022043F /* Main.storyboard */; };
 		722CA6FD241792850022043F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722CA6FC241792850022043F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		6A1AA8C0EBB9DFD9E572D5DC /* Pods-TaboolaSDKExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaboolaSDKExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-TaboolaSDKExampleSwift/Pods-TaboolaSDKExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		722CA6F0241792840022043F /* TaboolaSDKExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaboolaSDKExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722CA6F3241792840022043F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BE4EF12375E443FA42160B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		722CA6F7241792840022043F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		722CA6FA241792840022043F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		722CA6FC241792850022043F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				722CA6F3241792840022043F /* AppDelegate.swift */,
+				6BE4EF12375E443FA42160B3 /* SceneDelegate.swift */,
 				722CA6F7241792840022043F /* MainViewController.swift */,
 				7256529024A4DA08007C07EB /* Constants.swift */,
 				725461B12427A13400660672 /* SDK Classic */,
@@ -313,6 +316,7 @@
 				725461BB2427BB4200660672 /* NativeViewController.swift in Sources */,
 				7271C6FE24697B930003204A /* ClassicCollectionViewManagedByPublisherController.swift in Sources */,
 				722CA6F4241792840022043F /* AppDelegate.swift in Sources */,
+				408866BE560EC1AA92D5D36E /* SceneDelegate.swift in Sources */,
 				725461B32427A16800660672 /* ClassicCollectionViewManagedByTaboolaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

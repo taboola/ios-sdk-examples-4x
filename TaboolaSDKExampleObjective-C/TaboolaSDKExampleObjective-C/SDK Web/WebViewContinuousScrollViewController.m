@@ -27,7 +27,9 @@
     [super viewDidLoad];
     _webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     
-    _webView.frame = self.view.frame;
+    // Fill the container and follow its size, e.g. on rotation
+    _webView.frame = _webViewContainer.bounds;
+    _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [_webViewContainer addSubview:_webView];
     
     _webPage = [[TBLWebPage alloc]initWithDelegate:self];

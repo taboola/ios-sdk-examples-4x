@@ -20,7 +20,9 @@ class ContinuousScrollController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.frame = view.frame
+        // Fill the container and follow its size, e.g. on rotation
+        webView.frame = webViewContainer2.bounds
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         webViewContainer2.addSubview(webView)
         
         webPage =  TBLWebPage.init(delegate: self)

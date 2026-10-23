@@ -13,10 +13,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupButton];
-    [self.classicPage initExploreMoreWithPlacement:placementExploreMore
-                                              mode:feedMode
-                                          delegate:self
-                                     customSegment:customSegment];
+    [self.classicPage initializeExploreMoreWithPlacement:placementExploreMore
+                                                    mode:feedMode
+                                                delegate:self
+                                           customSegment:customSegment];
 }
 
 - (void)triggerExploreMore {
@@ -36,6 +36,10 @@
 }
 
 #pragma mark - Explore More delegate
+
+- (void)exploreMoreDidLoad {
+    NSLog(@"Explore More did load");
+}
 
 - (void)exploreMoreDidOpen {
     NSLog(@"Explore More did open");

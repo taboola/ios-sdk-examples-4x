@@ -31,6 +31,16 @@
     [self taboolaInit];
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    // Flow layout keeps the item sizes it has cached when only its bounds change, so cells would stay at
+    // the pre-rotation width. Invalidating alongside the transition asks for sizes once the new bounds are in place.
+    __weak typeof(self) weakSelf = self;
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [weakSelf.collectionViewManagedByTaboola.collectionViewLayout invalidateLayout];
+    } completion:nil];
+}
+
 - (void)taboolaInit {
     _classicPage = [[TBLClassicPage alloc]initWithPageType:pageType pageUrl:pageUrl delegate:self scrollView:_collectionViewManagedByTaboola];
     
@@ -75,7 +85,7 @@
         // return a feed cell size managed by Taboola SDK
         return [_taboolaFeedPlacement collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath withUIInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
     }
-    return CGSizeMake(self.view.frame.size.width, 200);
+    return CGSizeMake(collectionView.bounds.size.width, 200);
 }
 
 - (void)dealloc {

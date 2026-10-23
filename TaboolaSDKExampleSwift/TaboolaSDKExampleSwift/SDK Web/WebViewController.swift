@@ -19,7 +19,9 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.frame = view.frame
+        // Fill the container and follow its size, e.g. on rotation
+        webView.frame = webViewContainer.bounds
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         webViewContainer.addSubview(webView)
         
         webPage =  TBLWebPage.init(delegate: self)
