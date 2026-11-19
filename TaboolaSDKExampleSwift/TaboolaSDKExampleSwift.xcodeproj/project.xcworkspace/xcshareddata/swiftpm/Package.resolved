@@ -1,0 +1,15 @@
+{
+  "originHash" : "930c272225273e0b2131dee0eddadacee1683990817c00c63fbf6326f7fc052d",
+  "pins" : [
+    {
+      "identity" : "taboola-spm-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/taboola/taboola-spm-ios-sdk",
+      "state" : {
+        "revision" : "b0c56c2649789d6d0997828b497bf543cb8eaa5a",
+        "version" : "4.3.1"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -20,8 +20,6 @@ DerivedData
 *.hmap
 *.ipa
 
-# CocoaPods
-TaboolaSDKExampleObjective-C/Pods
-TaboolaSDKExampleObjective-C/Podfile.lock
-TaboolaSDKExampleSwift/Pods
-TaboolaSDKExampleSwift/Podfile.lock
+# Swift Package Manager
+.swiftpm/
+.build/
